@@ -11,6 +11,12 @@ def miniMaxSum(arr):
     # Print the results as space-separated values
     print(min_sum, max_sum)
 
-# Example usage:
-arr = [1, 2, 3, 4, 5]
-miniMaxSum(arr)
+# Take input manually from the user
+# Expecting space-separated integers
+arr = list(map(int, input("Enter 5 integers separated by space: ").split()))
+
+# Check if the user entered exactly 5 integers
+if len(arr) != 5:
+    print("Please enter exactly 5 integers.")
+else:
+    miniMaxSum(arr)
